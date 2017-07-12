@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapse_toolbar2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_collapsing"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:expandedTitleMarginBottom="@dimen/expanded_title_margin_bottom"
+            app:expandedTitleMarginEnd="@dimen/expanded_title_margin_end"
+            app:expandedTitleMarginStart="@dimen/expanded_title_margin_start"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+
+            <LinearLayout
+                style="@style/Widget.CardContent"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@color/greem_background_item"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/margin_top_layout"
+                        android:text="Lunes, 1 de Agosto"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/text_size_14" />
+
+                    <TextView
+                        android:id="@+id/tv_description"
+                        style="@style/ExpenseTrackerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="15dp"
+                        android:gravity="center"
+                        android:text="Est. La Molina"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+                    <TextView
+                        android:id="@+id/main.station.ruc"
+                        android:visibility="gone"
+                        style="@style/ExpenseTrackerTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Ruc:10203040"
+                        android:textColor="@color/white"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:id="@+id/textViewContacto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Contecto: "
+                        android:textSize="12dp" />
+
+
+                    <TextView
+                        android:id="@+id/textViewTel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                        android:text=": 977737208"
+                        android:textSize="20dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:gravity="top"
+                android:minHeight="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:titleMarginTop="15dp" />
+
+            <!-- <android.support.design.widget.TabLayout
+                 android:id="@+id/tablayout"
+                 android:layout_width="match_parent"
+                 android:layout_height="?attr/actionBarSize"
+                 android:layout_gravity="bottom"
+                 app:tabIndicatorColor="@color/colorAccent"
+                 app:tabIndicatorHeight="4dp"
+                 app:tabMode="scrollable" />-->
+
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                app:tabIndicatorHeight="4dp"
+                app:tabMode="scrollable" />
+
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="@dimen/md_keylines"
+        android:layout_marginRight="@dimen/md_keylines"
+        android:src="@drawable/ic_add_white_24dp"
+        android:visibility="gone" />
+
+
+</android.support.design.widget.CoordinatorLayout>

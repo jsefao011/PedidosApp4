@@ -1,0 +1,782 @@
+<resources>
+    <string name="app_name">STRATEGY</string>
+
+    <string name="default_values_name">Steve</string>
+    <string name="default_values_count_products">2</string>
+    <string name="default_values_count_tanks">6</string>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Configuraciones</string>
+    <string name="action_print">Imprimir</string>
+
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Contraseña</string>
+    <string name="login_image_description">Logo</string>
+    <string name="login_action_login">Iniciar Sesión</string>
+    <string name="login_message_notaccount">¿No tiene una cuenta?</string>
+
+
+    <string name="wizard_title_activity">Mago</string>
+    <string name="wizard_title_name">%1$s, nuestro Mago te guiará en el proceso de Despacho.</string>
+    <string name="wizard_tabtitle_name">Selecciona un Tanque:</string>
+    <string name="wizard_text_products_count">%1$d Productos, %2$d Tanques.</string>
+
+    <string name="dispatch_name">Despacho</string>
+    <string name="dispatch_title_name">Tanque 1</string>
+    <string name="dispatch_station_name">
+        "Agropacking Export S.A.\n"
+        "Est. Piura - Piura"
+    </string>
+    <string name="dispatch_product_name">PRODUCTO: GLP</string>
+
+    <string name="dispatch_contometer">Contómetro</string>
+
+    <string name="dispatch_button_requested">Despachar</string>
+    <string name="dispatch_button_read_contometer">Contómetro</string>
+    <string name="dispatch_hint_requested_quantity">Cantidad Solicitada</string>
+    <string name="dispatch_hint_dispensed_quantity">Cantidad Despachada</string>
+    <string name="dispatch_hint_quantity_initial">Contómetro Inicial</string>
+    <string name="dispatch_hint_quantity_final">Contómetro Final</string>
+    <string name="dispatch_hint_tank_initial_percent">% Tanque Inicial</string>
+    <string name="dispatch_hint_tank_final_percent">% Tanque Final</string>
+
+
+    <string name="ordered_product_title_name">Productos</string>
+    <string name="ordered_dispatch_title_name">Despachos</string>
+
+    <string name="estb_title_name">Plan</string>
+    <string name="order_title_name">Pedidos</string>
+    <string name="plan_title_name">BSC</string>
+    <string name="expenses_title_name">Gastos</string>
+    <string name="collect_title_name">Cobranzas</string>
+    <string name="collect_title_inventory">Cargar Orden</string>
+    <string name="bluetooth_title_name">Configurar Bluetooth</string>
+    <string name="summary_title_name">Resumen</string>
+
+
+    <string name="action_close_account">Cerrar Cuenta</string>
+    <string name="action_close_session">Cerrar Sessión</string>
+
+    <string name="action_abous_us">Acerca de</string>
+
+    <string name="nav_item_account">Cuenta</string>
+    <string name="title_activity_order">OrderActivity</string>
+    <string name="title_order">Prioridad Alta</string>
+
+    <!--PrintOrdenCarga-->
+
+    <string name="print_orden_carga_empresa">
+        " %1$s \n"
+        " %2$s \n"
+        " %3$s \n"
+        " %4$s "
+    </string>
+
+        <string name="print_orden_carga">
+        " Razón Social: %1$s \n"
+        "RUC: %2$s \n"
+        "Nro Comprobante: %3$s \n"
+        "Nro Guia: %4$s \n"
+        "Fecha Creación: %5$s \n"
+        "Fecha Acción: %6$s \n"
+    </string>
+      <string name="print_info_orden_carga_body1">
+          " UNIDAD DE MEDIDAD\t\t\t\t\t\t\t\t\t\t:\n"
+          "CANTIDAD\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "FACTOR DE CONVERSION\t\t\t\t\t\t\t:\n"
+          "DENSIDAD\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "PRECIO\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+    </string>
+
+       <string name="print_resp_orden_carga_body1">
+          " %1$s \n"
+          " %2$s \n"
+          " %3$s \n"
+          " %4$s \n"
+          " %5$s \n"
+    </string>
+
+    <!--<string name="print_info_orden_carga_trasciego">-->
+    <!--" Tipo de Origen\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Producto\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Cantidad\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Unidad de Medidad\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Factor Conversión\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Densidad\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--"Precio\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"-->
+    <!--</string>-->
+     <string name="print_info_orden_carga_trasciego">
+          " Cantidad\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "Unidad de Medidad\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "Factor Conversión\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "Densidad\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+          "Precio\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+    </string>
+
+      <string name="print_resp_orden_carga_body1_trasciego">
+          " %1$s \n"
+          " %2$s \n"
+          " %3$s \n"
+          " %4$s \n"
+          " %5$s \n"
+
+    </string>
+
+    <string name="print_orden_carga_trasciego">
+        " Tipo de Origen: %1$s \n"
+        "Producto: %2$s \n"
+        "Nro Guia: %3$s \n"
+        "Fecha Creación: %4$s \n"
+        "Fecha Acción: %5$s \n"
+    </string>
+
+
+    <string name="string_info_orden_compra">
+        " Razón Social:%1$s\n"
+        "Ruc:%2$s\n"
+        "Producto:%3$s\n"
+        "Fecha de Acción:%4$s\n"
+        "NrGuia:%5$s"
+    </string>
+
+    <string name="string_info_orden_trasciego">
+        " Tipo de Origen:%1$s\n"
+        "Producto:%2$s\n"
+        "Fecha de Acción:%3$s\n"
+        "NrGuia:%4$s\n"
+    </string>
+
+
+    <!--Fin-->
+
+
+
+    <string name="print_despacho_empresa">
+        " %1$s \n"
+        " %2$s \n"
+        " %3$s \n"
+        " %4$s "
+    </string>
+
+    <!--<string name="print_info_despacho">-->
+    <!--"INSTALACION: %1$s \n"-->
+    <!--"COORDENADAS: %2$s \n"-->
+    <!--"PLACA: %3$s \n"-->
+    <!--"AGENTE DE VENTA: %4$s \n "-->
+    <!--"CLIENTE: %17$s \n "-->
+    <!--"NUMERO DE COMPROBANTE: %5$s \n \n "-->
+    <!--"******************      DESPACHO      **************** \n \n"-->
+    <!--"FECHA: %6$s \n"-->
+    <!--"HORA INICIO: %7$s \n"-->
+    <!--"HORA FIN: %8$s \n"-->
+    <!--"CONTADOR INICIAL: %9$s \n"-->
+    <!--"CONTADOR FINAL: %10$s \n"-->
+    <!--"CANTIDAD DESPACHADA: %11$s \n"-->
+    <!--"\n "-->
+    <!--"PORCENTAJE INICIAL TANQUE: %12$s \n"-->
+    <!--"PORCENTAJE FINAL TANQUE: %13$s \n"-->
+    <!--"SERIE TANQUE: %14$s \n"-->
+    <!--"NUMERO DE TRANSPORTE: %15$s \n \n"-->
+    <!--" &#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45; \n"-->
+    <!--"RECIBIDO POR:\n"-->
+    <!--"NOMBRE: ________________________________ \n \n"-->
+    <!--"DNI:  __________________________________\n \n"-->
+    <!--"FIRMA POR: _____________________________ \n \n"-->
+    <!--"**      Documento sin valor tributario      ** \n"-->
+    <!--"**      Consulte este documento en       *** \n \n"-->
+    <!--"               %16$s          \n \n"-->
+    <!--</string>-->
+
+    <!--Update PrintDispatch -->
+
+    <!--Hora Inicio - Hora Fin-->
+   <string name="print_resp_dispatch_hora_inicio_fin">
+          "\t\t\tHora Inicio\t\t\t\t\t:\t  %1$s\n"
+       "\t\t\tHora Fin\t\t\t\t\t\t:\t  %2$s"
+    </string>
+    <!--FIN-->
+
+    <!--Fin PrintDispatch -->
+    <string name="print_info_despacho">
+        " Nombre\t\t\t\t:%1$s\n"
+        "Dirección\t\t\t:%2$s\n"
+        "Instalación\t\t:%3$s\n"
+        "Coordenadas\t:%4$s \n"
+        "Placa\t\t\t\t\t\t:%5$s \n"
+        "Agente\t\t\t\t\t:%6$s \n"
+        "Cliente\t\t\t\t\t:%7$s \n"
+        "NroDespacho\t:%8$s \n"
+    </string>
+    <string name="print_info_dispatch_body1">
+        " Contador Inicial\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t :\n"
+        "Porcentaje Inicial\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t :\n"
+        "Serie Tanque\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t :\n"
+        "Nro Transporte\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t :\n"
+    </string>
+     <string name="print_resp_dispatch_body1">
+          " %1$s \n"
+          " %2$s \n"
+          " %3$s \n"
+          " %4$s \n"
+    </string>
+
+   <string name="print_info_dispatch_feet1">
+          "RECIBIDO POR:\n\n"
+       "NOMBRE\t\t\t: ________________________________ \n \n"
+       "DNI\t\t\t\t\t\t\t:\t_______________________________\n \n"
+       "FIRMA POR\t\t: ________________________________ \n \n"
+    </string>
+
+      <string name="print_dispatch_cantidad">
+          "Cantidad Depachada\t(%1$s)\t\t:\t%2$s    "
+    </string>
+
+
+   <string name="print_info_dispatch_feet2">
+       "          Documento sin valor tributario       \n"
+       "          Consulte este documento en        \n"
+       "           www.consultoraestrategia.com          \n \n"
+    </string>
+
+      <string name="print_info_dispatch_body2">
+        " Contador Final\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+        "Porcentaje Tanque Final\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+        "Capacidad de Tanque\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t:\n"
+    </string>
+       <string name="print_resp_dispatch_body2">
+          " %1$s \n"
+          " %2$s \n"
+          " %3$s \n"
+    </string>
+
+
+
+    <string name="print_factura_empresa">
+        " %1$s \n"
+        " %2$s "
+    </string>
+
+
+    <string name="cabecerca_titulo_resumen">
+        " RESUMEN DEL DÍA \n"
+    </string>
+
+
+    <string name="print_factura_header">
+        " CLIENTE  : %1$s \n"
+        "DNI/RUC  : %2$s \n"
+        "DIRECCION: %3$s "
+    </string>
+
+
+      <string name="print_factura_header_resumen">
+        "AGENTE           : %1$s \n"
+        "LIQUIDACION : %2$s \n"
+        "FECHA             : %3$s \n"
+    </string>
+
+     <string name="print_factura_detalle_resumen">
+         "SALDO INICIAL           :  S/.           %1$s \n"
+         "INGRESOS TOTALES:  S/.           %2$s \n"
+         "EN EFECTIVO             :  S/.           %3$s \n"
+         "GASTOS TOTALES    :  S/.           %4$s \n"
+         "TOTAL A RENDIR       :  S/.           %5$s \n"
+    </string>
+
+     <string name="text_detalle_ingresos">
+         "%1$-10s"
+    </string>
+
+     <string name="print_detalle_ingresos_items">
+         " %1$s \n"
+         " ----------------------------------------------------------------------------------------\n"
+         " <b> %2$s </b>\n"
+    </string>
+
+
+
+    <string name="print_factura_items">
+        " %1$s \n"
+        "OP. GRAVADA\t\t\t\tS/.\n"
+        "OP. INAFECTA\t\t\tS/.\n"
+        "OP. EXONERADA\t\tS/.\n"
+        "OP. GRATUITA\t\t\tS/.\n"
+        "DESCUENTOS\t\t\tS/.\n"
+        "I.G.V.\t\t\t\t\t\t\t\t\tS/.\n\n"
+        "PRECIO VENTA\t\t\tS/.\n"
+    </string>
+    <string name="print_factura_items_importe">
+        " %1$s\n"
+        " %2$s\n"
+        " %3$s\n"
+        " %4$s\n"
+        " %5$s\n"
+        " %6$s\n"
+        " %7$s\n"
+        "----------\n"
+        " %8$s"
+    </string>
+    <string name="print_factura_operaciones">
+        "OP. GRAVADA     S/.\n"
+        "OP. INAFECTA    S/.\n"
+        "OP. EXONERADA   S/.\n"
+        "OP. GRATUITA    S/.\n"
+        "DESCUENTOS      S/.\n"
+        "I.G.V.          S/.\n\n"
+        "PRECIO VENTA    S/.\n"
+    </string>
+    <string name="print_factura_operaciones_monto">
+        "7542.37\n"
+        "0.00\n"
+        "0.00\n"
+        "0.00\n"
+        "0.00\n"
+        "1357.63\n"
+        "_________\n"
+        "8900.00"
+    </string>
+
+
+   <string name="print_factura_footer">
+
+        " %1$s \n"
+        "AGENTE: %2$s \n\n"
+        "V. Resumen: %3$s  \n\n"
+        "<b>REPRESENTACION IMPRESA DE LA FACTURA DE VENTA ELECTRONICA</b>\n"
+        "Visualice este documento en:\n"
+        "<u> %4$s </u>"
+    </string>
+    <!--Factura Electronica Items-->
+    <string name="print_factura_telefono">
+        " Telf:\t%1$s"
+    </string>
+    <string name="print_factura_ruc">
+        " R.U.C.:%1$s"
+    </string>
+    <string name="print_factura_imei">
+        "IMEI:%1$s"
+    </string>
+    <string name="print_factura_fecha">
+        " FECHA:%1$s"
+    </string>
+    <string name="print_factura_num">
+        "Nº:%1$s"
+    </string>
+
+
+    <string name="print_factura_items2">
+        " OP. GRAVADA\t\t\t\tS/.\n"
+        "OP. INAFECTA\t\t\t\tS/.\n"
+        "OP. EXONERADA\t\t\tS/.\n"
+        "OP. GRATUITA\t\t\t\tS/.\n"
+        "DESCUENTOS\t\t\t\tS/.\n"
+        "I.G.V.\t\t\t\t\t\t\t\t\t\tS/.\n\n"
+        "IMPORTE TOTAL\t\t\tS/."
+    </string>
+
+    <string name="print_factura_items_importe2">
+        " %1$s\n"
+        " %2$s\n"
+        " %3$s\n"
+        " %4$s\n"
+        " %5$s\n"
+        " %6$s\n"
+        "----------\n"
+        " %7$s"
+    </string>
+    <!--FIN-->
+
+
+
+
+    <string name="large_text">
+        "Material is the metaphor.\n\n"
+
+        "A material metaphor is the unifying theory of a rationalized space and a system of motion."
+        "The material is grounded in tactile reality, inspired by the study of paper and ink, yet "
+        "technologically advanced and open to imagination and magic.\n"
+        "Surfaces and edges of the material provide visual cues that are grounded in reality. The "
+        "use of familiar tactile attributes helps users quickly understand affordances. Yet the "
+        "flexibility of the material creates new affordances that supercede those in the physical "
+        "world, without breaking the rules of physics.\n"
+        "The fundamentals of light, surface, and movement are key to conveying how objects move, "
+        "interact, and exist in space and in relation to each other. Realistic lighting shows "
+        "seams, divides space, and indicates moving parts.\n\n"
+
+        "Bold, graphic, intentional.\n\n"
+
+        "The foundational elements of print based design typography, grids, space, scale, color, "
+        "and use of imagery guide visual treatments. These elements do far more than please the "
+        "eye. They create hierarchy, meaning, and focus. Deliberate color choices, edge to edge "
+        "imagery, large scale typography, and intentional white space create a bold and graphic "
+        "interface that immerse the user in the experience.\n"
+        "An emphasis on user actions makes core functionality immediately apparent and provides "
+        "waypoints for the user.\n\n"
+
+        "Motion provides meaning.\n\n"
+
+        "Motion respects and reinforces the user as the prime mover. Primary user actions are "
+        "inflection points that initiate motion, transforming the whole design.\n"
+        "All action takes place in a single environment. Objects are presented to the user without "
+        "breaking the continuity of experience even as they transform and reorganize.\n"
+        "Motion is meaningful and appropriate, serving to focus attention and maintain continuity. "
+        "Feedback is subtle yet clear. Transitions are efﬁcient yet coherent.\n\n"
+
+        "3D world.\n\n"
+
+        "The material environment is a 3D space, which means all objects have x, y, and z "
+        "dimensions. The z-axis is perpendicularly aligned to the plane of the display, with the "
+        "positive z-axis extending towards the viewer. Every sheet of material occupies a single "
+        "position along the z-axis and has a standard 1dp thickness.\n"
+        "On the web, the z-axis is used for layering and not for perspective. The 3D world is "
+        "emulated by manipulating the y-axis.\n\n"
+
+        "Light and shadow.\n\n"
+
+        "Within the material environment, virtual lights illuminate the scene. Key lights create "
+        "directional shadows, while ambient light creates soft shadows from all angles.\n"
+        "Shadows in the material environment are cast by these two light sources. In Android "
+        "development, shadows occur when light sources are blocked by sheets of material at "
+        "various positions along the z-axis. On the web, shadows are depicted by manipulating the "
+        "y-axis only. The following example shows the card with a height of 6dp.\n\n"
+
+        "Resting elevation.\n\n"
+
+        "All material objects, regardless of size, have a resting elevation, or default elevation "
+        "that does not change. If an object changes elevation, it should return to its resting "
+        "elevation as soon as possible.\n\n"
+
+        "Component elevations.\n\n"
+
+        "The resting elevation for a component type is consistent across apps (e.g., FAB elevation "
+        "does not vary from 6dp in one app to 16dp in another app).\n"
+        "Components may have different resting elevations across platforms, depending on the depth "
+        "of the environment (e.g., TV has a greater depth than mobile or desktop).\n\n"
+
+        "Responsive elevation and dynamic elevation offsets.\n\n"
+
+        "Some component types have responsive elevation, meaning they change elevation in response "
+        "to user input (e.g., normal, focused, and pressed) or system events. These elevation "
+        "changes are consistently implemented using dynamic elevation offsets.\n"
+        "Dynamic elevation offsets are the goal elevation that a component moves towards, relative "
+        "to the component’s resting state. They ensure that elevation changes are consistent "
+        "across actions and component types. For example, all components that lift on press have "
+        "the same elevation change relative to their resting elevation.\n"
+        "Once the input event is completed or cancelled, the component will return to its resting "
+        "elevation.\n\n"
+
+        "Avoiding elevation interference.\n\n"
+
+        "Components with responsive elevations may encounter other components as they move between "
+        "their resting elevations and dynamic elevation offsets. Because material cannot pass "
+        "through other material, components avoid interfering with one another any number of ways, "
+        "whether on a per component basis or using the entire app layout.\n"
+        "On a component level, components can move or be removed before they cause interference. "
+        "For example, a floating action button (FAB) can disappear or move off screen before a "
+        "user picks up a card, or it can move if a snackbar appears.\n"
+        "On the layout level, design your app layout to minimize opportunities for interference. "
+        "For example, position the FAB to one side of stream of a cards so the FAB won’t interfere "
+        "when a user tries to pick up one of cards.\n\n"
+    </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <!--String Listar Establecimientos-->
+    <string name="estable_default_empresa">STRATEGY</string>
+    <string name="estable_default_name">Est. La Molina</string>
+    <string name="estable_default_address">Panamericana Norte Km 1076 Piura</string>
+    <string name="estable_default_description">3:00 - 7:00 p.m.</string>
+    <string name="estable_action_attend">Atender</string>
+    <string name="estable_default_marker">15:00</string>
+    <!--##############################-->
+
+
+    <!--### CuentaResumenActivity-->
+    <string name="activity_summary_account">Resumen caja</string>
+    <string name="title_activity_account_summary">AccountSummary</string>
+
+    <string name="fragment_summary">Ingresos y gastos</string>
+    <string name="fragment_inventory">Inventario de ventas</string>
+    <string name="information_date">19/07/2016</string>
+    <string name="information_summary">41</string>
+    <string name="information_agent">Kelvin Thony Meza Espiritu</string>
+    <string name="title_activity_dispatch">Despachos</string>
+    <string name="title_activity_costs">CostsActivity</string>
+    <string name="title_activity_print_dispatch">Imprimir Despacho</string>
+    <string name="title_activity_print_factura">Imprimir Factura</string>
+    <!--### ####-->
+
+
+    <!--###### PrintDispatch -->
+
+    <string name="print_snack_error">Error</string>
+    <string name="print_snack_sync_success">Error: Revise la impresora</string>
+
+
+
+    <string name="html_dispatch">
+
+    </string>
+
+    <!--####-->
+    <string name="main_dialog_title">Abriendo caja</string>
+    <string name="main_dialog_text_km_start">Kilometraje inicial</string>
+    <string name="main_dialog_text_weight_start">Peso inicial</string>
+    <string name="main_dialog_text_percent_start">Porcentaje inicial</string>
+
+    <string name="main_dialog_message_title">Abriendo Caja</string>
+    <string name="main_dialog_message_loanding">Conectando</string>
+    <string name="title_activity_station_menu">StationMenuActivity</string>
+    <string name="title_activity_charges"></string>
+    <string name="title_activity_load_inventory">Cargar Inventario</string>
+    <string name="title_activity_prueba">prueba</string>
+
+
+    <!-- ###### Expenses Activity  -->
+    <string name="activity_expenses_account">Gastos</string>
+    <string name="activity_expenses_today">Hoy</string>
+    <string name="activity_expenses_week">Semana</string>
+    <string name="save">Guardar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="add_new_expense">Add new Expense</string>
+    <string name="optional_description">Descripción (Opcional)</string>
+    <string name="total">Total</string>
+    <string name="title_activity_main_station">Ubigeo</string>
+    <string name="selected_count">%1$d Selected</string>
+    <!-- #### -->
+
+
+    <!-- ###### Charges Account  -->
+    <string name="charges_account">22/08/16</string>
+    <string name="activity_charges_account">Cobranza</string>
+    <string name="activity_charges_fac">Facturas</string>
+    <!-- #### -->
+
+    <string name="print_distpach_empresa">
+        "STRATEGY\n"
+        "Cl. Los Butilones 140. Urb. La Molina Vieja\n"
+        "La Molina Lima\n"
+        "RUC: 20514518484\n"
+        "Telf: (511) 3936703\n"
+    </string>
+
+
+      <string name="print_dispatch_header">
+        "DIRECCION   : F246-00000024\n"
+        "INSTALACION : %1$s\n"
+        "PLACA       : Agropacking Export S.A.\n"
+        "AGENTE      : 20525974635\n"
+        "COMPROBANTE : Car. Panamericana Norte Km. 1076 Piura - Piura - Tambo Grande."
+    </string>
+
+      <string name="print_dispatch_body">
+        "FECHA   : F246-00000024\n"
+        "HORA INICIO : %1$s\n"
+        "HORA FIN       : Agropacking Export S.A.\n"
+        "CONTADOR INICIAL      : 20525974635\n"
+        "CONTADOR FINAL      : 20525974635\n"
+        "CANTIDAD DESPACHO  : Car. Panamericana Norte Km. 1076 Piura - Piura - Tambo Grande."
+    </string>
+
+     <string name="print_dispatch_footer">
+        "PORCENTAJE INICIO TANQUE   : F246-00000024\n"
+        "PORCENTAJE FINAL TANQUE   : F246-00000024\n"
+        "SERIE TANQUE      : Agropacking Export S.A.\n"
+        "NUMERO DE TRANSPORTE      : 20525974635"
+    </string>
+
+    <string name="print_dispatch_adding">
+        "Nombre   : F246-00000024\n"
+        "DNI   : F246-00000024\n"
+        "Firma     : Agropacking Export S.A."
+    </string>
+
+      <string name="print_dispatch_footer_footer">
+        "Documento sin valor tributario.\n"
+        "Visualize este documento en .\n"
+        "www.consultoraestrategia.com"
+    </string>
+
+    <!-- PRINT DISPATCH -->
+    <string name="print_dispatch_body3">
+        " %1$s \n"
+        "OP. GRAVADA\t\t\tS/.\n"
+        "OP. INAFECTA\t\t\tS/.\n"
+        "OP. EXONERADA\t\tS/.\n"
+        "OP. GRATUITA\t\t\tS/.\n"
+        "DESCUENTOS\t\t\tS/.\n"
+        "I.G.V.\t\t\t\t\t\t\t\t\tS/.\n\n"
+        "PRECIO VENTA\t\t\tS/.\n"
+    </string>
+
+    <!--Fin DISPATCH-->
+
+    <string name="header_energigas">
+        "Razon Social: %1$s.\n"
+        "R.U.C: %2$s.\n"
+        " %3$s "
+    </string>
+
+    <string name="descripcion_indicadores">
+        "Logo Solicitado : %1$s.\n"
+        "Meta GI %2$s.\n"
+    </string>
+
+         <string name="adapter_caja_gasto">
+        " Tipo de Concepto: %1$s \n"
+        "Fecha de Acción: %2$s \n"
+        "Nro Comprobante: %3$s \n"
+    </string>
+
+    <string name="main_dialog_title_close">Cerrar caja</string>
+    <string name="main_dialog_text_km_end">Kilometraje Final</string>
+    <string name="main_dialog_text_weight_end">Peso Final</string>
+    <string name="main_dialog_text_percent_end">Porcentaje Final</string>
+    <string name="title_activity_settings">Preferencias</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="spinnerItemsExpeneses">
+        <item>item1</item>
+        <item>item2</item>
+        <item>item3</item>
+        <item>item4</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="title_activity_station_order">StationOrderActivity</string>
+    <string name="title_activity_configuration">Configuration</string>
+    <string name="title_activity_sell">SellActivity</string>
+    <string name="title_activity_definir_cuotas">DefinirCuotasActivity</string>
+    <string name="title_activity_agregar_pedido_despacho">AgregarPedidoDespacho</string>
+
+    <!--Cobranza-->
+    <string name="dialog_cobranza_Monto_Pago">Monto Pago</string>
+    <string name="dialog_cobranza_No">No</string>
+    <string name="dialog_cobranza_Si">Si</string>
+    <string name="dialog_cobranza_Cancelar">CANCELAR</string>
+    <string name="dialog_cobranza_Aceptar">ACEPTAR</string>
+    <string name="title_activity_main_configuraciones">Configuraciones</string>
+
+    <!--Fin Cobranza-->
+
+    <!--ORDEN DE CARGA-->
+
+
+    <string name="ordencarga.text.tipocarga">Tipo de Carga</string>
+    <string name="ordencarga.text.conversion">Factor de Conversión</string>
+    <string name="ordencarga.text.densidad">Densidad</string>
+    <string name="ordencarga.text.producto">Producto</string>
+    <string name="ordencarga.text.cantidad">Cantidad</string>
+    <string name="ordencarga.text.precio">Precio</string>
+    <string name="ordencarga.text.unidadmedida">Unidad de Medida</string>
+
+    <string name="ordencarga.carga.text.emision">F. emisión</string>
+    <string name="ordencarga.carga.text.entrega">F. entrega</string>
+
+
+    <string name="ordencarga.button.text.pickdate">Fecha</string>
+    <string name="ordencarga.button.text.save">Guardar</string>
+
+
+    <string name="ordencarga.compra.text.title">Compra</string>
+    <string name="ordencarga.compra.text.ruc">RUC</string>
+    <string name="ordencarga.compra.text.rs">Razón Social</string>
+    <string name="ordencarga.compra.text.factura.serie">Fact. Serie</string>
+    <string name="ordencarga.compra.text.factura.correlativo">Correlativo</string>
+    <string name="ordencarga.compra.text.guia.serie">Guia Serie</string>
+    <string name="ordencarga.compra.text.guia.correlativo">Correlativo</string>
+    <string name="ordencarga.compra.text.emision">Fecha emisión</string>
+    <string name="ordencarga.compra.text.entrega">Fecha entrega</string>
+
+    <string name="ordencarga.trasciego.text.title">Trasciego</string>
+    <string name="ordencarga.trasciego.tipoorigen">Tipo de Origen</string>
+    <string name="ordencarga.trasciego.text.guia">Nro Guía</string>
+    <string name="ordencarga.trasciego.text.emision">Fecha emisión</string>
+    <string name="ordencarga.trasciego.text.entrega">Fecha entrega</string>
+    <string name="title_activity_pruebamaps">Map</string>
+    <string name="title_activity_orden_carga_">OrdenCarga_Activity</string>
+    <string name="title_activity_editar_despacho">Editar despacho</string>
+    <string name="Validar_Cambios_Servidores_dialog_title">Autorizar Cambio</string>
+
+
+
+
+    <string name="dialog_message">Sin permiso para hacer y administrar las llamadas. No podemos hacer una llamada  de emergencia en caso necesario</string>
+    <string name="ok">OK</string>
+
+
+</resources>

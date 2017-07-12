@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <Spinner
+            android:id="@+id/sp_tipoDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:entries="@array/spinnerItemsExpeneses"
+            android:prompt="@string/save" />
+
+        <LinearLayout
+            android:id="@+id/LinearFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_nameautoCompleteRuc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:focusable="true"
+                android:hint="Ingrese Ruc"
+                android:inputType="number" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/LinearFactura2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <AutoCompleteTextView
+                android:id="@+id/et_nameautoCompleteRazon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:hint="Razón Social" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:counterEnabled="true"
+                app:counterMaxLength="4"
+                app:errorEnabled="true"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/et_num_serie"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:ems="4"
+                    android:hint="Serie"
+                    android:text="" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <EditText
+                    android:id="@+id/et_num_comprob"
+                    android:layout_width="190dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="110dp"
+                    android:enabled="true"
+                    android:hint="N° Comprobante"
+                    android:inputType="number" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="F.Acción"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/btndate"
+                style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FECHA" />
+
+        </LinearLayout>
+
+        <Spinner
+            android:id="@+id/sp_tcGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:entries="@array/spinnerItemsExpeneses" />
+
+        <Spinner
+            android:id="@+id/sp_tiposgastos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:entries="@array/spinnerItemsExpeneses" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_description"
+                style="@style/ExpenseTrackerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:hint="@string/optional_description"
+                android:maxLines="2" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="@dimen/dimen_10_10dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_10dp">
+
+            <EditText
+                android:id="@+id/et_total"
+                style="@style/ExpenseTrackerEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:hint="@string/total"
+                android:inputType="numberDecimal"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="@dimen/dimen_12_10dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/cancel" />
+
+            <Button
+                android:id="@+id/btn_save"
+                style="@style/Base.Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                android:layout_width="@dimen/dimen_12_10dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:text="@string/save" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

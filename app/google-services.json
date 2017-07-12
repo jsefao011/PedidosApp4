@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "742692151217",
+    "firebase_url": "https://energigas-app.firebaseio.com",
+    "project_id": "energigas-app",
+    "storage_bucket": "energigas-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742692151217:android:9af25323b6415958",
+        "android_client_info": {
+          "package_name": "energigas.apps.systemstrategy.energigas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742692151217-dh1stl6elem83m47bi6tjo2ps3rkcldj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "energigas.apps.systemstrategy.energigas",
+            "certificate_hash": "4A8EBE1DE6CD672686B466BB0ABBB0C3B712BD3A"
+          }
+        },
+        {
+          "client_id": "742692151217-tr9qjcgpq80p13u72mr3p193jqufj05m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC09gB6ooWZhwTgWcEGL-VVrArtXYOhY54"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742692151217-tr9qjcgpq80p13u72mr3p193jqufj05m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

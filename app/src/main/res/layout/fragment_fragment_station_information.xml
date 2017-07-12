@@ -1,0 +1,36 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dimen_10dp">
+
+        <TextView
+            android:id="@+id/frag_st_title"
+            style="@style/TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:tag="frag_st_title"
+            android:text="EST. LA MOLINA"
+            android:visibility="gone" />
+
+        <com.google.android.gms.maps.MapView
+
+            android:id="@+id/mapview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
